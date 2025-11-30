@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="nav-header">
+        <h2 class="logo">Portfolio</h2>
+
+        <nav class="nav-links">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#certificates" class="nav-item">Certificates</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-btn" id="menuBtn">☰</div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Welcome to My Portfolio</h1>
+        <h1>Hello, I'm <span> Meghasri </span></h1>
+        <p>BE - CSE Student | Developer | Tech Enthusiast</p>
+        <p>Scroll down to know more about me.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate Computer Science student with interests in
+            Artificial Intelligence, Web Development, and creative technology.
+            I love exploring new ideas and transforming them into interactive,
+            meaningful digital experiences.I am a dedicated and passionate Computer Science Engineering student specializing in programming, software development, and problem-solving. I enjoy working on real-time projects, exploring new technologies, and continuously improving my technical knowledge.
+My goal is to become a skilled software developer and contribute to innovative tech solutions.
+        </p>
+    </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Section</title>
+  <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+
+  <h2 class="title">My Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+      <h3>HTML</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+      <h3>CSS</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      <h3>JavaScript</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+      <h3>React</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+      <h3>Python</h3>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+      <h3>Java</h3>
+    </div>
+
+  </div>
+<!-- certificate.html -->
+ <article>
+
+<h2>My Certifications</h2>
+
+<div class="certificate-container">
+
+  <div class="certificate-card" onclick="openModal('Python Programming', 'NPTEL','Portfolio 1/python.jpg')">
+    <div class="certificate-title">Python Programming</div>
+    <div class="certificate-platform">NPTEL</div>
+    <a class="view-btn">View Certificate</a>
+  </div>
+
+  <div class="certificate-card" onclick="openModal('Cloud Computing', 'NPTEL','Portfolio 1/Cloud.jpg')">
+    <div class="certificate-title">Cloud Computing</div>
+    <div class="certificate-platform">NPTEL</div>
+    <a class="view-btn">View Certificate</a>
+  </div>
+
+  <div class="certificate-card" onclick="openModal('Machine Learning', 'NPTEL','Portfolio 1/ml.jpg')">
+    <div class="certificate-title">Machine Learning</div>
+    <div class="certificate-platform">NPTEL</div>
+    <a class="view-btn">View Certificate</a>
+  </div>
+
+  <div class="certificate-card" onclick="openModal('HTML & CSS', 'PrepInsta','Portfolio 1/html.jpg')">
+    <div class="certificate-title">HTML & CSS</div>
+    <div class="certificate-platform">PrepInsta</div>
+    <a class="view-btn">View Certificate</a>
+  </div>
+
+  <div class="certificate-card" onclick="openModal('JavaScript', 'PrepInsta','Portfolio 1/java.jpg')">
+    <div class="certificate-title">JavaScript</div>
+    <div class="certificate-platform">PrepInsta</div>
+    <a class="view-btn">View Certificate</a>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-platform"></p>
+    <img id="modal-image" src="" alt="Certificate">
+  </div>
+</div>
+</article>
+
+<!-- Project Section -->
+<h2>My Projects</h2>
+
+<p style="text-align: center; max-width: 700px; margin: 0 auto 30px; font-size: 1rem; color: #555;">
+  Here are some of the projects I have worked on as a CSE student, focusing on front-end development and interactive web applications.
+</p>
+
+<div class="project-container">
+  <div class="project-card">
+    <h3>Hospital Locator App</h3>
+    <p>Search hospitals by district, filter by problem, check doctor availability and book appointments.</p>
+    <span class="tech-stack">HTML, CSS, JavaScript, React</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>Personal portfolio website showcasing skills, certificates, and projects.</p>
+    <span class="tech-stack">HTML, CSS, JavaScript, React</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Tour Booking Landing Website</h3>
+    <p>Landing page for tour packages with modern UI and animations.</p>
+    <span class="tech-stack">HTML, CSS, JavaScript</span>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<h2>Contact Me</h2>
+
+<p style="text-align: center; max-width: 700px; margin: 0 auto 30px; font-size: 1rem; color: #555;">
+  I am currently seeking opportunities in Frontend Development. You can contact me for job opportunities, collaborations, or professional inquiries.
+</p>
+
+
+<div class="contact-container">
+  <div class="contact-card">
+    <h3>Email</h3>
+    <p>meghasri@example.com</p>
+  </div>
+  
+  <div class="contact-card">
+    <h3>Phone</h3>
+    <p>+91 12345 67890</p>
+  </div>
+  
+  <div class="contact-card">
+    <h3>LinkedIn</h3>
+    <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+  </div>
+  
+  <div class="contact-card">
+    <h3>GitHub</h3>
+    <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </div>
+</div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
